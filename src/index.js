@@ -1,7 +1,7 @@
 //require('dotenv').config({path:'./env'}) thsi will destroy our consistency approach 
 import dbConnect from "./db/index.js";
 import dotenv from 'dotenv'
-dotenv.config({path:'./env'})
+dotenv.config({path:'../.env'})
 
 
 
