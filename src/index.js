@@ -5,11 +5,6 @@ dotenv.config({path:'./env'})
 
 
 
-
-
-
-
-
 dbConnect()
 
 
