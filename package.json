@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend complete course",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/main.js"
+  },
+  "author": "Ali sher",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
