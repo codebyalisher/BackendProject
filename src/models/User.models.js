@@ -48,7 +48,7 @@ refreshToke:{
 
 userSchema.pre("save",async function (next) {
   if(!this.isModified("password"))return next();
-  this.passWord=bcrypt.hash(this.passWord,10)
+  this.passWord=await bcrypt.hash(this.passWord,10)
   next()
 })
 
