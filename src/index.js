@@ -1,4 +1,5 @@
 //require('dotenv').config({path:'./env'}) thsi will destroy our consistency approach 
+import app from "./app.js";
 import dbConnect from "./db/index.js";
 import dotenv from 'dotenv'
 dotenv.config({path:'../.env'})
@@ -6,6 +7,14 @@ dotenv.config({path:'../.env'})
 
 
 dbConnect()
+.then(()=>{
+    app.listen(process.env.PORT,()=>{
+        console.log(`app is listening on ${process.env.PORT || 8000}`)
+    })
+})
+.catch((error)=>{
+    console.log("monogdb connection failed !!!",error)
+})
 
 
 /*import mongoose from "mongoose"
